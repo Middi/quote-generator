@@ -1,0 +1,60 @@
+/*=============================================
+=                 TYPOGRAPHY                  =
+=============================================*/
+
+
+* {
+    color: $black;
+    font-family: "Open Sans";
+}
+
+p {
+    font-family: "Open Sans";
+    font-size: 0.75em;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family: "Open Sans";
+    font-weight: 200;
+    color: $white;
+    span {
+        color: $black;
+        font-weight: 700;
+    }
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: "Open Sans";
+    font-weight: 200;
+    color: $black;
+    padding-bottom: 20px;
+    span {
+        color: $black;
+        font-weight: 700;
+    }
+}
+
+a {font-size: 1em;}
+
+.built a,
+strong {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s ease;
+}
+
+a:hover {text-decoration: underline;}
+
+// FONTAWESOME STYLES
+i {color: $black;}
+
+.fa-heart {
+    font-size: 12px;
+    color: $button;
+}
