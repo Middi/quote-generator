@@ -1,10 +1,26 @@
-$("#get-quote").on("click", function() {
-	
-     $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
-			 
-  $(".quote-place").html("<h3>" + a[0].content + "</h3><h4><em>- "  + a[0].title + "</em></h4>");		 
-			 
-});
-	
-	
+function quote () {
+    $.ajax({
+        url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+        success: function (data) {
+            var post = data.shift();
+
+
+            var cutContent = post.content.slice(3);
+            cutContent = cutContent.substring(0, cutContent.length - 5);
+            cutContent = $.trim(cutContent);
+
+            $('.quote-place').html("<p><span>&ldquo;</span> " + cutContent + "<span>&rdquo;</span> <div class='author'><h4><em>- " + post.title + "</em></h4></div>");
+        },
+        cache: false
     });
+}
+
+
+$(document).ready(function () {
+    quote();
+});
+
+$('#get-quote').on('click', function (e) {
+    e.preventDefault();
+    quote();
+});
