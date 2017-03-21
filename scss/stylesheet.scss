@@ -34,30 +34,24 @@ nav {
 
 // --- CONTENT AREA --- //
 main {
-    min-height      : 80vh;
-    margin-bottom   : -32px;
+    height      : 100%;
     background-color: $background;
 }
-
-main:after {
-    display         : block;
-}
-
 
 
 .container {
 	max-width: 920px;
-	height: 90vh;
+	height: 100%;
 	margin: 100px auto 10px;
 	padding: 20px 0;
 	text-align: center;
 }
 
+
 #card-section {
 	min-height: 250px;
 	width: 600px;
 	margin: 80px auto;
-	padding-top: 40px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -78,7 +72,7 @@ main:after {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	padding-bottom: 20px;
+	padding: 60px 0 20px 0;
 	width: 90%;
 }
 
@@ -97,23 +91,64 @@ button {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
 	background-color: #5995f0;
 	border: 1px solid #aaa;
 	border-radius: 6px;
 	box-shadow: 0 4px 8px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3);
+	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 	cursor: pointer;
-	
+
+
 	&:hover {
-		background-color: darken(#5995f0, 5%);
+		background-color: #4286ee;
+		box-shadow: 0 8px 10px 0 rgba(99, 99, 99, 0.4), 0 8px 16px 0 rgba(99, 99, 99, 0.4);
+		
+}
+
+
+	&:active {
+  transform: scale(0.94);
+	}
+}
+
+#tweet {
+	width: 60px;
+	font-size: 1.3em;
+	color: white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #5995f0;
+	border: 1px solid #aaa;
+	border-radius: 6px;
+	padding: 5px;
+	margin-bottom: 60px;
+	background: white;
+	color: #2f2f2f;
+	box-shadow: 0 4px 8px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3);
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	i {
+		font-size: 2em;
+		color: #00aced;
+	}
+	&:hover {
+		box-shadow: 0 8px 10px 0 rgba(99, 99, 99, 0.4), 0 8px 16px 0 rgba(99, 99, 99, 0.4);
+	}
+	
+	&:active {
+  transform: scale(0.94);
 	}
 }
 
 
+
+
 // --- FOOTER --- //
-footer,
-main:after {
-    height          : 32px;
+footer{
+    height          : 36px;
 }
 
 footer {

@@ -95,8 +95,8 @@ h4 {
 footer p {
   font-family: "Open Sans";
   font-size: 0.9em;
-  padding-top: 8px;
-  line-height: 1.9em;
+  padding-top: 10px;
+  line-height: 1.6em;
   font-weight: 300; }
   footer p strong {
     color: white; }
@@ -154,16 +154,12 @@ nav {
       align-self: center; }
 
 main {
-  min-height: 80vh;
-  margin-bottom: -32px;
+  height: 100%;
   background-color: #f3f5f6; }
-
-main:after {
-  display: block; }
 
 .container {
   max-width: 920px;
-  height: 90vh;
+  height: 100%;
   margin: 100px auto 10px;
   padding: 20px 0;
   text-align: center; }
@@ -172,7 +168,6 @@ main:after {
   min-height: 250px;
   width: 600px;
   margin: 80px auto;
-  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,7 +187,7 @@ main:after {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 60px 0 20px 0;
   width: 90%; }
 
 .author {
@@ -209,6 +204,7 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   background-color: #5995f0;
   border: 1px solid #aaa;
   border-radius: 6px;
@@ -217,11 +213,40 @@ button {
   transition: all 0.4s ease;
   cursor: pointer; }
   button:hover {
-    background-color: #4286ee; }
+    background-color: #4286ee;
+    box-shadow: 0 8px 10px 0 rgba(99, 99, 99, 0.4), 0 8px 16px 0 rgba(99, 99, 99, 0.4); }
+  button:active {
+    -webkit-transform: scale(0.94);
+            transform: scale(0.94); }
 
-footer,
-main:after {
-  height: 32px; }
+#tweet {
+  width: 60px;
+  font-size: 1.3em;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5995f0;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 5px;
+  margin-bottom: 60px;
+  background: white;
+  color: #2f2f2f;
+  box-shadow: 0 4px 8px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  #tweet i {
+    font-size: 2em;
+    color: #00aced; }
+  #tweet:hover {
+    box-shadow: 0 8px 10px 0 rgba(99, 99, 99, 0.4), 0 8px 16px 0 rgba(99, 99, 99, 0.4); }
+  #tweet:active {
+    -webkit-transform: scale(0.94);
+            transform: scale(0.94); }
+
+footer {
+  height: 36px; }
 
 footer {
   background: #1f2022;
@@ -240,10 +265,15 @@ footer {
 /* -- BREAK 1 -- */
 @media only screen and (max-width: 600px) {
   .container {
-    margin: 0px;
-    height: 118vh; }
+    margin: 0px; }
   #card-section {
-    width: 100%;
-    height: auto;
-    background-color: white; } }
+    width: 95%; }
+  p {
+    font-size: 1.3em; }
+  h4 {
+    font-size: 1em; }
+  button {
+    height: 48px;
+    width: 120px;
+    font-size: 1em; } }
 /*# sourceMappingURL=style.css.map */
