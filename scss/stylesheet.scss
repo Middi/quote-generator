@@ -2,42 +2,39 @@
 @import "colors";
 @import "typography";
 @import "buttons";
-
 body {
-
-    background-color: $background;
+	background-color: $background;
 }
 
-
 header {
-    height          : 56px;
-    width           : 100%;
-    background      : $blue500;
-    border-bottom   : 1px solid #bbb;
-    box-shadow      : 0 2px 6px -4px #999;
-    position        : fixed;
-    top             : 0;
-    z-index         : 10;
+	height: 56px;
+	width: 100%;
+	background: $blue500;
+	border-bottom: 1px solid #bbb;
+	box-shadow: 0 2px 6px -4px #999;
+	position: fixed;
+	top: 0;
+	z-index: 10;
 }
 
 nav {
-    max-width       : 920px;
-    height          : 56px;
-    margin          : 0 auto;
-    padding         : 0 26px;
-    display         : flex;
-    justify-content : center;
+	max-width: 920px;
+	height: 56px;
+	margin: 0 auto;
+	padding: 0 26px;
+	display: flex;
+	justify-content: center;
 }
 
-
-.logo { align-self  : center; }
+.logo {
+	align-self: center;
+}
 
 // --- CONTENT AREA --- //
 main {
-    height      : 100%;
-    background-color: $background;
+	height: 100%;
+	background-color: $background;
 }
-
 
 .container {
 	max-width: 920px;
@@ -46,7 +43,6 @@ main {
 	padding: 20px 0;
 	text-align: center;
 }
-
 
 #card-section {
 	min-height: 250px;
@@ -99,16 +95,12 @@ button {
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 	cursor: pointer;
-
-
 	&:hover {
 		background-color: #4286ee;
 		box-shadow: 0 8px 10px 0 rgba(99, 99, 99, 0.4), 0 8px 16px 0 rgba(99, 99, 99, 0.4);
-		
-}
-
+	}
 	&:active {
-  transform: scale(0.94);
+		transform: scale(0.94);
 	}
 }
 
@@ -136,34 +128,32 @@ button {
 	&:hover {
 		box-shadow: 0 8px 10px 0 rgba(99, 99, 99, 0.4), 0 8px 16px 0 rgba(99, 99, 99, 0.4);
 	}
-	
 	&:active {
-  transform: scale(0.94);
+		transform: scale(0.94);
 	}
 }
 
-
 button:focus,
 a:focus {
-     outline: none;
+	outline: none;
 }
 
 // --- FOOTER --- //
-footer{
-    height          : 36px;
+footer {
+	height: 36px;
 }
 
 footer {
-    background      : $footer;
-    display         : table;
-    width           : 100%;
-    text-align      : center;
+	background: $footer;
+	display: table;
+	width: 100%;
+	text-align: center;
 }
 
 .built {
-    display         : table-cell;
-    vertical-align  : middle;
-    color           : $close;
+	display: table-cell;
+	vertical-align: middle;
+	color: $close;
 }
 
 @import "media-queries";
