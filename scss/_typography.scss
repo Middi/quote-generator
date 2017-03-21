@@ -4,57 +4,87 @@
 
 
 * {
-    color: $black;
-    font-family: "Open Sans";
+	color: #1f1f1f;
+	font-family: "Open Sans";
 }
 
 p {
-    font-family: "Open Sans";
-    font-size: 0.75em;
-    line-height: 1.2;
-    font-weight: 300;
+	font-family: "Open Sans";
+	font-size: 0.75em;
+	line-height: 1.2;
+	font-weight: 300;
 }
 
 h1 {
-    font-size: 1.5em;
-    font-family: "Open Sans";
-    font-weight: 200;
-    color: $white;
-    span {
-        color: $black;
-        font-weight: 700;
-    }
+	font-size: 1.5em;
+	font-family: "Open Sans";
+	font-weight: 200;
+	color: #fbfbfb;
+}
+
+h1 span {
+	color: #1f1f1f;
+	font-weight: 700;
 }
 
 h2 {
-    font-size: 1.5em;
-    font-family: "Open Sans";
-    font-weight: 200;
-    color: $black;
-    padding-bottom: 20px;
-    span {
-        color: $black;
-        font-weight: 700;
-    }
+	font-size: 1.5em;
+	font-family: "Open Sans";
+	font-weight: 200;
+	color: #1f1f1f;
+	padding-bottom: 20px;
 }
 
-a {font-size: 1em;}
+h2 span {
+	color: #1f1f1f;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1.8em;
+	font-family: "Open Sans";
+	font-weight: 200;
+	color: #2f2f2f;
+	padding-bottom: 15px;
+	span {
+		font-family: helvetica;
+		color: #444;
+		font-size: 1.2em;
+		font-weight: 400;
+	}
+}
+
+h4 {
+	font-size: 1.3em;
+	font-family: "Open Sans";
+	font-weight: 200;
+	color: #6f6f6f;
+	text-align: right;
+}
+
+a {
+	font-size: 1em;
+}
 
 .built a,
 strong {
-    padding: 0;
-    margin: 0;
-    color: white;
-    text-decoration: none;
-    transition: all 0.6s ease;
+	padding: 0;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	-webkit-transition: all 0.6s ease;
+	transition: all 0.6s ease;
 }
 
-a:hover {text-decoration: underline;}
+a:hover {
+	text-decoration: underline;
+}
 
-// FONTAWESOME STYLES
-i {color: $black;}
+i {
+	color: #1f1f1f;
+}
 
 .fa-heart {
-    font-size: 12px;
-    color: $button;
+	font-size: 12px;
+	color: #fc2d23;
 }
