@@ -74,6 +74,8 @@ p {
   font-weight: 200;
   color: #2f2f2f;
   padding-bottom: 15px; }
+  p strong {
+    color: #2e2e2e; }
 
 p span {
   font-family: helvetica;
@@ -82,12 +84,13 @@ p span {
   font-weight: 400; }
 
 h4 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family: "Open Sans";
   font-weight: 400;
   text-align: right; }
   h4 em {
-    color: #3f3f3f; }
+    font-style: italic;
+    color: #6f6f6f; }
 
 footer p {
   font-family: "Open Sans";
@@ -95,6 +98,8 @@ footer p {
   padding-top: 8px;
   line-height: 1.9em;
   font-weight: 300; }
+  footer p strong {
+    color: white; }
 
 a {
   font-size: 1em; }
@@ -149,7 +154,7 @@ nav {
       align-self: center; }
 
 main {
-  min-height: 100vh;
+  min-height: 80vh;
   margin-bottom: -32px;
   background-color: #f3f5f6; }
 
@@ -158,8 +163,8 @@ main:after {
 
 .container {
   max-width: 920px;
-  height: 95vh;
-  margin: 100px auto;
+  height: 90vh;
+  margin: 100px auto 10px;
   padding: 20px 0;
   text-align: center; }
 

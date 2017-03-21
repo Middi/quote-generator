@@ -34,7 +34,7 @@ nav {
 
 // --- CONTENT AREA --- //
 main {
-    min-height      : 100vh;
+    min-height      : 80vh;
     margin-bottom   : -32px;
     background-color: $background;
 }
@@ -47,8 +47,8 @@ main:after {
 
 .container {
 	max-width: 920px;
-	height: 95vh;
-	margin: 100px auto;
+	height: 90vh;
+	margin: 100px auto 10px;
 	padding: 20px 0;
 	text-align: center;
 }
