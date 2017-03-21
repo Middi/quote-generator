@@ -245,6 +245,10 @@ button {
     -webkit-transform: scale(0.94);
             transform: scale(0.94); }
 
+button:focus,
+a:focus {
+  outline: none; }
+
 footer {
   height: 36px; }
 
