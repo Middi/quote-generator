@@ -13,10 +13,12 @@ function quote() {
 
             // Set Twitter to content
 
-            // Correct for URL
+            // Correct for URL utf-8
             var contentSpaces = encodeURI(cutContent)
-                .replace(/&#8217;/g, '%27').replace(/"/g, '%22').replace(/&#8211;/g, '%2D').replace(/;/g, '%3B').replace(/#8220%3B;/g, '%3B');
+            .replace(/;/g, '%3B').replace(/&#8217%3B/g, '%27').replace(/"/g, '%22').replace(/&#8211%3B/g, '%2D').replace(/&#8212%3B/g, '%5F').replace(/;/g, '%3B').replace(/&#8220%3B/g, '%E2%80%9C').replace(/&#8221%3B/g, '%E2%80%9D').replace(/&#8230%3B/g, '%E2%80%A6').replace(/&#8216%3b/g, '%60');
 
+
+                
             // Set Link
             var link = document.getElementById("tweet");
             link.setAttribute("href", "https://twitter.com/intent/tweet?text=" + contentSpaces);
@@ -40,11 +42,18 @@ $('#get-quote').on('click', function (e) {
     quote();
 });
 
-// New quote on space bar, N key or right arrow
 $(document).keydown(function (e) {
+
+
+// New quote on space bar, N key or right arrow
     if (e.which === 32 || e.which === 39 || e.which === 78) {
         $('.quote-place').fadeOut(400);
         e.preventDefault();
         quote();
+    }
+
+// New tweet on T key
+    if (e.which === 84) {
+        document.getElementById("tweet").click();
     }
 });
