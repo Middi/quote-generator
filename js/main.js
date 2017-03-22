@@ -3,18 +3,23 @@ function quote() {
         url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
         success: function (data) {
             var post = data.shift();
-// Remove begining and end <p> tags and trim any extra white space at the end.
+            // Remove begining and end <p> tags and trim any extra white space at the end.
             var cutContent = post.content.slice(3);
             cutContent = cutContent.substring(0, cutContent.length - 5);
             cutContent = $.trim(cutContent);
 
-// Add quote and author to quote place div
+            // Add quote and author to quote place div
             $('.quote-place').html("<p><span>&ldquo;</span> " + cutContent + "<span>&rdquo;</span><div class='author'><h4><em>- " + post.title + "</em></h4></div>").fadeIn(400);
 
-// Set Twitter to content
+            // Set Twitter to content
 
+            // Correct for URL
+            var contentSpaces = encodeURI(cutContent)
+                .replace(/&#8217;/g, '%27').replace(/"/g, '%22').replace(/&#8211;/g, '%2D').replace(/;/g, '%3B').replace(/#8220%3B;/g, '%3B');
+
+            // Set Link
             var link = document.getElementById("tweet");
-            link.setAttribute("href", "https://twitter.com/intent/tweet?text=" + cutContent);
+            link.setAttribute("href", "https://twitter.com/intent/tweet?text=" + contentSpaces);
 
             return false;
         },

@@ -6,6 +6,9 @@
 /* -- BREAK 1 -- */
 
 @media only screen and (max-width: 600px) {
+
+	main {min-height: 95vh;}
+
 	.container {margin: 0px;}
 
 	#card-section {width: 95%;}

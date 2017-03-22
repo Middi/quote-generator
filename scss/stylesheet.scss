@@ -31,14 +31,19 @@ nav {
 }
 
 // --- CONTENT AREA --- //
+
+
 main {
-	height: 100%;
-	background-color: $background;
+	min-height: 98vh;
+	background-color: #f3f5f6;
+}
+
+main:after {
+	display: block;
 }
 
 .container {
 	max-width: 920px;
-	height: 100%;
 	margin: 100px auto 10px;
 	padding: 20px 0;
 	text-align: center;
@@ -48,6 +53,7 @@ main {
 	min-height: 250px;
 	width: 600px;
 	margin: 80px auto;
+	// padding-top: 40px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -104,6 +110,7 @@ button {
 	}
 }
 
+
 #tweet {
 	width: 60px;
 	font-size: 1.3em;
@@ -111,6 +118,7 @@ button {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
 	background-color: #5995f0;
 	border: 1px solid #aaa;
 	border-radius: 6px;
@@ -133,18 +141,9 @@ button {
 	}
 }
 
-button:focus,
-a:focus {
-	outline: none;
-}
-
-// --- FOOTER --- //
-footer {
-	height: 36px;
-}
 
 footer {
-	background: $footer;
+	background: #1f2022;
 	display: table;
 	width: 100%;
 	text-align: center;
@@ -153,7 +152,10 @@ footer {
 .built {
 	display: table-cell;
 	vertical-align: middle;
-	color: $close;
+	color: #c8c8c8;
 }
+
+
+
 
 @import "media-queries";

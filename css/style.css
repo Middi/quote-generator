@@ -154,12 +154,14 @@ nav {
       align-self: center; }
 
 main {
-  height: 100%;
+  min-height: 98vh;
   background-color: #f3f5f6; }
+
+main:after {
+  display: block; }
 
 .container {
   max-width: 920px;
-  height: 100%;
   margin: 100px auto 10px;
   padding: 20px 0;
   text-align: center; }
@@ -226,6 +228,7 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   background-color: #5995f0;
   border: 1px solid #aaa;
   border-radius: 6px;
@@ -245,13 +248,6 @@ button {
     -webkit-transform: scale(0.94);
             transform: scale(0.94); }
 
-button:focus,
-a:focus {
-  outline: none; }
-
-footer {
-  height: 36px; }
-
 footer {
   background: #1f2022;
   display: table;
@@ -268,6 +264,8 @@ footer {
 =============================================*/
 /* -- BREAK 1 -- */
 @media only screen and (max-width: 600px) {
+  main {
+    min-height: 95vh; }
   .container {
     margin: 0px; }
   #card-section {
