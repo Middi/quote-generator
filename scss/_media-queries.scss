@@ -7,11 +7,10 @@
 
 @media only screen and (max-width: 600px) {
 
-	main {min-height: 95vh;}
 
-	.container {margin: 0px;}
-
-	#card-section {width: 95%;}
+	#card-section {width: 95%;
+	
+	margin: 20px auto 40px;}
 
 	p {font-size: 1.3em;}
 
