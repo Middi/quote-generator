@@ -4,15 +4,14 @@
 =============================================*/
 
 * {
-	color: #1f1f1f;
 	font-family: "Open Sans";
+	color: white;
 }
 
 h1 {
 	font-size: 1.5em;
 	font-family: "Open Sans";
 	font-weight: 200;
-	color: #fbfbfb;
 }
 
 h1 span {
@@ -75,6 +74,7 @@ footer p {
 
 a {
 	font-size: 1em;
+
 }
 
 .built a,
@@ -100,3 +100,8 @@ i {
 	color: #fc2d23;
 }
 
+
+.fa-free-code-camp {
+	padding: 0 5px 0 0;
+	color:   black;
+}
