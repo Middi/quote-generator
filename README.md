@@ -1,4 +1,4 @@
-Quote Generator
+[Quote Generator](http://richardmiddleton.me/quote-generator/)
 =====
 
 FCC Quote Generator App
